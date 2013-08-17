@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container">
-        <h1>Test Form</h1>
+        <h1>{{header}}</h1>
             <form action="" method="post" id="message">
               <fieldset>
                 <input type="text" placeholder="Name">
@@ -48,7 +48,7 @@
     
       var posting = $.post();
       posting.done(function(data) {
-      var content = $("#featured").append('<h2>Form Saved!</h2>');
+      var content = $("#featured").append('<h2>{{message}}</h2>');
     
         $("#result").empty().load(content);
     
