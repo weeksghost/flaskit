@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect
+from flask import render_template, redirect
 from app import app
 
 
@@ -7,4 +7,3 @@ from app import app
 def index():
     return render_template("index.html",
         title = 'Ajax Form')
-
